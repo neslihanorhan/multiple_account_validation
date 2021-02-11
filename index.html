@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+	<title>Multiple Accounts Validation</title>
+</head>
+
+<body>
+	<div class="container d-flex justify-content-center">
+		<div class="col-7 m-3">
+			<div class="card bg-light">
+				<div class="card-header">New Multiple Account</div>
+				<div class="card-body">
+					<h5 class="card-title">Multiple Accounts</h5>
+					<h6 class="card-subtitle text-muted font-italic">(account_user_email,account_password,first_name,last_name,broker_or_fan)</h6>
+					<h6 class="card-subtitle text-muted font-italic mt-1">Please write one account per line.</h6>
+					<textarea id="value" class="form-control mt-4 mb-2 border-top-0 border-right-0 border-left-0 bg-light shadow mh-100 overflow-hidden" style="height: 250px; border-bottom-width: medium">
+namesurname@gmail.com,pass1,name1,surname1,broker 
+anothernamesurname@gmail.com,pass2,name2,surname2,fan
+examplemail@gmailcom,pass1234,name3,surname3,brokerrr</textarea>
+					<div id="validation_message"></div>
+				</div>
+				<div class="card-footer">
+					<button id="button" class="btn btn-primary w-20 font-weight-bold">
+						Save
+						<i class="fas fa-save ml-1"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</html>
